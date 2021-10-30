@@ -1,0 +1,19 @@
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/security?serverTimezone=UTC
+    username: root
+    password: pure6671.
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  servlet:
+    multipart:
+      enabled: true
+
+
+jwt:
+  auth:
+    access: com-example-security-test-jwt-access-token^^-qwer-asdf-12345-ss
+    refresh: com-example-security-test-jwt-refresh-token^^-qwer-qwer-asdf-12345-ss
